@@ -12,7 +12,7 @@
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     a{color:var(--text);text-decoration:none}
     .nav{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,#0b0b12cc,#0b0b1200);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-    .nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px20px}
+    .nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
     .brand{font-weight:900;letter-spacing:.3px}
     .brand b{color:var(--accent)}
     .links a{margin-left:18px;opacity:.9}
@@ -24,7 +24,7 @@
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
     @media(max-width:900px){.grid{grid-template-columns:1fr}}
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
-    .btn{padding:10px12px;border-radius:12px;border:1px solid var(--border);background:var(--panel);width:max-content}
+    .btn{padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--panel);width:max-content}
     .btn.small{font-size:14px}
   </style>
 </head>
@@ -52,9 +52,9 @@
 
       <div class="card">
         <h3>Monte Carlo Investment Simulation</h3>
-        <p class="muted">1,000-run simulation using percentile bands + sample paths.</p>
-        <a class="btn small" href="/files/python/monte-carlo-growth.html" target="_blank">Open HTML</a>
-
+        <p class="muted">1,000-run simulation using percentile bands + sample paths. Model long-term growth uncertainty realistically.</p>
+        <a class="btn small" href="/files/python/monte-carlo-sim.html" target="_blank">Open Interactive HTML</a>
+        <a class="btn small" href="/files/python/monte-carlo-simulations.csv" target="_blank">Download CSV</a>
       </div>
 
       <div class="card">
