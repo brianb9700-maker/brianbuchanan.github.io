@@ -12,7 +12,7 @@
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     a{color:var(--text);text-decoration:none}
     .nav{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,#0b0b12cc,#0b0b1200);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-    .nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px20px}
     .brand{font-weight:900;letter-spacing:.3px}
     .brand b{color:var(--accent)}
     .links a{margin-left:18px;opacity:.9}
@@ -22,9 +22,9 @@
     h1{font-size:36px;margin:8px 0 0}
     .muted{color:var(--muted)}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
-    .btn{padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--panel);width:max-content}
+    .btn{padding:10px12px;border-radius:12px;border:1px solid var(--border);background:var(--panel);width:max-content}
     .btn.small{font-size:14px}
   </style>
 </head>
@@ -49,25 +49,25 @@
     <p class="muted">Notebooks and simulations rendered to HTML for quick viewing.</p>
 
     <div class="grid">
-      <!-- Project 1 -->
+
       <div class="card">
         <h3>Monte Carlo Investment Simulation</h3>
-        <p class="muted">1,000-run simulation with percentile bands and sample paths.</p>
-        <a class="btn small" href="/files/python/monte-carlo-growth.html" target="_blank">Open HTML</a>
+        <p class="muted">1,000-run simulation using percentile bands + sample paths.</p>
+        <a class="btn small" href="/files/python/monte-carlo-sim.html" target="_blank">Open Simulation</a>
       </div>
 
-      <!-- Placeholders -->
       <div class="card">
         <h3>Portfolio Risk Metrics (Coming Soon)</h3>
-        <p class="muted">Compute daily returns, vol, Sharpe, max drawdown + simple report.</p>
-        <a class="btn small" href="#" onclick="return false;">Uploading soon</a>
+        <p class="muted">Sharpe, volatility, drawdown + factor return summary.</p>
+        <a class="btn small" href="#" onclick="return false;">Uploading Soon</a>
       </div>
 
       <div class="card">
         <h3>Bond Pricing Toolkit (Coming Soon)</h3>
-        <p class="muted">Yield-to-maturity, PV of cash flows, duration/convexity helpers.</p>
-        <a class="btn small" href="#" onclick="return false;">Uploading soon</a>
+        <p class="muted">YTM, PV cashflow engine, duration + convexity helpers.</p>
+        <a class="btn small" href="#" onclick="return false;">Uploading Soon</a>
       </div>
+
     </div>
   </main>
 </body>
