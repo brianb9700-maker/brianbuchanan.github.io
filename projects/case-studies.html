@@ -1,45 +1,72 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Case Studies – Brian Buchanan</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Studies — Brian Buchanan</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0b12;--panel:#11111a;--text:#e8e8f0;--muted:#a0a3b1;--accent:#7c5cff;--accent-2:#3fa9ff;--card:#141421;--border:#1e1e2a;--max:1100px}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--text);text-decoration:none}
+    .nav{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,#0b0b12cc,#0b0b1200);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{font-weight:900;letter-spacing:.3px}
+    .brand b{color:var(--accent)}
+    .links a{margin-left:18px;opacity:.9}
+    .links a:hover{opacity:1}
+    .links a.active{color:var(--accent)}
+    .section{max-width:var(--max);margin:40px auto;padding:0 20px}
+    h1{font-size:36px;margin:8px 0 0}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
+    .btn{padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--panel);width:max-content}
+    .btn.small{font-size:14px}
+  </style>
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="/">Brian Buchanan</a>
-  <nav>
-    <a href="/projects/excel.html">Excel</a>
-    <a href="/projects/python.html">Python</a>
-    <a href="/projects/case-studies.html">Case Studies</a>
-    <a href="/resume/Brian_Buchanan_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Brian <b>Buchanan</b></div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/projects/excel.html">Excel</a>
+        <a href="/projects/python.html">Python</a>
+        <a class="active" href="/projects/case-studies.html">Case Studies</a>
+        <a href="mailto:brianb97002@gmail.com">Contact</a>
+      </div>
+    </div>
   </nav>
-</header>
-<main>
-  <h1>Data Case Studies</h1>
-  <p>End-to-end write-ups with problem, data, method, and results.</p>
 
-  <section class="grid">
-    <article class="card">
-      <h3>Medicare Plan Comparison (Sample)</h3>
-      <p><strong>Problem:</strong> Compare plan costs/benefits for a sample client.<br>
-         <strong>Tools:</strong> Excel (pivot + charts).<br>
-         <strong>Outcome:</strong> Clear cost driver analysis and plan shortlist.
-      </p>
-      <a class="btn small" href="/files/case-studies/medicare-comparison.pdf" target="_blank">Read PDF</a>
-    </article>
+  <main class="section">
+    <span class="muted">Projects · Case Studies</span>
+    <h1>Case Studies</h1>
+    <p class="muted">Long-form analyses and scenario comparisons. I’ll expand these over time.</p>
 
-    <article class="card">
-      <h3>Bond Risk Dashboard</h3>
-      <p><strong>Problem:</strong> Sensitivity of bond price to rate changes.<br>
-         <strong>Tools:</strong> Excel + Python (duration/convexity).<br>
-         <strong>Outcome:</strong> Playbook for rate scenarios.
-      </p>
-      <a class="btn small" href="/files/case-studies/bond-risk.pdf" target="_blank">Read PDF</a>
-    </article>
-  </section>
-</main>
-<footer class="footer">© <span id="y"></span> Brian Buchanan</footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+    <div class="grid">
+      <div class="card">
+        <h3>Medicare Plan Cost Comparison</h3>
+        <p class="muted">Scenario modeling of expected out-of-pocket vs. benefit trade-offs (PPO vs. HMO), with sensitivity to utilization and premiums.</p>
+        <a class="btn small" href="#" onclick="return false;">Write-up coming soon</a>
+      </div>
+
+      <div class="card">
+        <h3>Retirement Income Gap Analysis</h3>
+        <p class="muted">Simple framework to estimate income shortfall vs. target, using safe-withdrawal rates and sequence risk concepts.</p>
+        <a class="btn small" href="#" onclick="return false;">Write-up coming soon</a>
+      </div>
+
+      <div class="card">
+        <h3>Term vs. Whole Life Scenario</h3>
+        <p class="muted">Compare cumulative cost, surrender values, and “buy term invest difference” sensitivities.</p>
+        <a class="btn small" href="#" onclick="return false;">Write-up coming soon</a>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
