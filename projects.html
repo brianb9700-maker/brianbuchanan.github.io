@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Brian Buchanan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body{background:#0b0b12;color:#e8e8f0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:#e8e8f0;text-decoration:none}
+    .nav{position:sticky;top:0;background:#0b0b12cc;border-bottom:1px solid #1e1e2a;backdrop-filter:blur(8px)}
+    .nav-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+    .links a{margin-left:18px;opacity:.85}
+    .links a.active{color:#7c5cff}
+    .wrap{max-width:1100px;margin:40px auto;padding:0 20px}
+    h1{margin:8px 0 4px}
+    .muted{color:#a0a3b1}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:#141421;border:1px solid #1e1e2a;border-radius:12px;padding:16px}
+    .tag{display:inline-block;margin-top:8px;font-size:12px;color:#a0a3b1}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Brian <b>Buchanan</b></div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="mailto:brian.buchanan@bankerslife.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <h1>Projects</h1>
+    <p class="muted">Excel + Python builds with short write-ups and code links.</p>
+
+    <div class="grid">
+      <a id="gre-weakness" class="card" href="#">
+        <h3>GRE Quant Weakness Map</h3>
+        <p>Log sessions → Python creates topic heatmap + accuracy table. Exports to Excel.</p>
+        <span class="tag">Excel · Python · pandas</span>
+      </a>
+
+      <a id="crypto-backtester" class="card" href="#">
+        <h3>Crypto Trend Signal Backtester</h3>
+        <p>EMA/ADX logic vs. Buy & Hold on BTC/ETH/DOGE with equity curve plots.</p>
+        <span class="tag">Python · Backtesting · matplotlib</span>
+      </a>
+
+      <a id="medicare-optimizer" class="card" href="#">
+        <h3>Medicare Plan Cost Optimizer</h3>
+        <p>Scenario modeling (premiums + OOP) to pick cheapest plan by condition.</p>
+        <span class="tag">Excel · Python</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
