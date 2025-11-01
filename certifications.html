@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications — Brian Buchanan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b12; --panel:#11111a; --text:#e8e8f0; --muted:#a0a3b1;
+      --accent:#7c5cff; --border:#1e1e2a; --card:#141421;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--text);text-decoration:none}
+    .nav{position:sticky;top:0;z-index:10;background:#0b0b12cc;border-bottom:1px solid var(--border);backdrop-filter:blur(8px)}
+    .nav-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+    .links a{margin-left:18px;opacity:.85}
+    .links a.active{color:var(--accent)}
+    .wrap{max-width:1100px;margin:40px auto;padding:0 20px}
+    h1{margin:6px 0 10px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+    .badge{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:12px}
+    .row{display:flex;gap:12px;align-items:center;margin-top:8px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:#1a1a28;border:1px solid var(--border);font-size:14px}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#3fa9ff);color:#fff;border:none}
+    .section{margin-top:26px}
+    ul{margin:8px 0 0 18px}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Brian <b>Buchanan</b></div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="certifications.html">Certifications</a>
+        <a href="mailto:brian.buchanan@bankerslife.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <span class="badge">Credentials & Training</span>
+    <h1>Certifications</h1>
+    <p class="muted">Selected credentials and trainings relevant to finance, analytics, and insurance.</p>
+
+    <!-- Highlighted cards -->
+    <div class="grid">
+      <div class="card">
+        <h3>SIE — Securities Industry Essentials</h3>
+        <p class="muted">FINRA foundational exam covering markets, products, risks, and ethics.</p>
+        <div class="row">
+          <!-- Replace href once you upload a PDF: assets/certs/sie.pdf -->
+          <a class="btn primary" href="assets/certs/sie.pdf">View Certificate (PDF)</a>
+          <span class="muted">Status: Passed</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>2026 Wellcare ACT — Certification + FWA</h3>
+        <p class="muted">Annual Medicare compliance and product training for plan year 2026.</p>
+        <div class="row">
+          <!-- Replace href once you upload your PDF -->
+          <a class="btn primary" href="assets/certs/wellcare-act-2026.pdf">View Certificate (PDF)</a>
+          <span class="muted">Completed: Aug 4, 2025</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Excel — (Add your exact certificate name)</h3>
+        <p class="muted">Spreadsheet modeling, data cleaning, pivot analysis, and charts.</p>
+        <div class="row">
+          <!-- Replace href once you upload -->
+          <a class="btn primary" href="assets/certs/excel-cert.pdf">View Certificate (PDF)</a>
+          <span class="muted">Provider: (e.g., Microsoft / Coursera)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional trainings -->
+    <div class="section">
+      <h2>Additional Training</h2>
+      <ul class="muted">
+        <li>HIPAA · AML · Cybersecurity 101</li>
+        <li>Sales & Compliance Curriculum (internal)</li>
+        <li>Medicare product training (carriers)</li>
+        <li>Python & Data Analytics coursework (Coursera / IBM / etc.)</li>
+      </ul>
+      <p class="muted" style="margin-top:8px">You can add or remove items as you prefer. Link items to PDFs in <code>assets/certs/</code>.</p>
+    </div>
+  </div>
+</body>
+</html>
